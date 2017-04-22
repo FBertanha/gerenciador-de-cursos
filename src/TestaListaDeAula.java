@@ -9,7 +9,7 @@ public class TestaListaDeAula {
     public static void main(String[] args) {
         Aula a1 = new Aula("Revistando as ArrayLists", 21);
         Aula a2 = new Aula("Listas de objetos", 19);
-        Aula a3 = new Aula("Relacionamento de listas e objetoss", 15);
+        Aula a3 = new Aula("Relacionamento de listas e objetos", 15);
 
         ArrayList<Aula> aulas = new ArrayList<>();
         aulas.add(a1);
