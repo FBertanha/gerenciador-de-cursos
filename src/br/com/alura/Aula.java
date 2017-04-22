@@ -22,7 +22,7 @@ public class Aula implements Comparable<Aula>{
 
     @Override
     public String toString() {
-        return "[br.com.alura.Aula: " + getTitulo() + ", " + getTempo() + "minutos]";
+        return "[Aula: " + getTitulo() + ", " + getTempo() + "minutos]";
     }
 
     @Override
