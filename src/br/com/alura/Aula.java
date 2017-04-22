@@ -1,3 +1,5 @@
+package br.com.alura;
+
 /**
  * Created by felipe on 22/04/17.
  */
@@ -20,7 +22,7 @@ public class Aula implements Comparable<Aula>{
 
     @Override
     public String toString() {
-        return "[Aula: " + getTitulo() + ", " + getTempo() + "minutos]";
+        return "[br.com.alura.Aula: " + getTitulo() + ", " + getTempo() + "minutos]";
     }
 
     @Override
