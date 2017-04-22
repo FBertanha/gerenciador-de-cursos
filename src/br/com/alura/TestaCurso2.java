@@ -26,6 +26,9 @@ public class TestaCurso2 {
 
         System.out.println(javaColecoes);
 
+        List<Aula> a = new ArrayList<Aula> (Collections.nCopies(100, aulas.get(1)));
+        System.out.println(a);
+
 
 
 
