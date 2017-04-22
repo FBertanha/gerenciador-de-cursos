@@ -1,7 +1,6 @@
 package br.com.alura;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by felipe on 22/04/17.
@@ -10,6 +9,7 @@ public class Curso {
     private String nome;
     private String instrutor;
     private List<Aula> aulas = new ArrayList<Aula>();
+    private Set<Aluno> alunos = new HashSet<>();
 
     public Curso(String nome, String instrutor) {
         this.nome = nome;
@@ -25,7 +25,8 @@ public class Curso {
     }
 
     public List<Aula> getAulas() {
-        return aulas;
+        //return aulas;
+        return Collections.unmodifiableList(aulas);
     }
 
     public void adiciona(Aula aula) {
@@ -41,5 +42,14 @@ public class Curso {
         return "Curso: " + getNome()
                 + ", Instrutor: " + getInstrutor() +
                 ", Aulas:" + getAulas();
+    }
+
+    public void matricula(Aluno aluno) {
+        alunos.add(aluno);
+    }
+
+    public Set<Aluno> getAlunos() {
+        //return alunos;
+        return Collections.unmodifiableSet(alunos);
     }
 }
