@@ -9,7 +9,7 @@ public class Curso {
     private String nome;
     private String instrutor;
     private List<Aula> aulas = new ArrayList<Aula>();
-    private Set<Aluno> alunos = new HashSet<>();
+    private Set<Aluno> alunos = new HashSet<Aluno>();
 
     public Curso(String nome, String instrutor) {
         this.nome = nome;
@@ -51,5 +51,9 @@ public class Curso {
     public Set<Aluno> getAlunos() {
         //return alunos;
         return Collections.unmodifiableSet(alunos);
+    }
+
+    public boolean estaMatriculado(Aluno aluno) {
+        return alunos.contains(aluno);
     }
 }
